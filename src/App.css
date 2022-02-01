@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+.fight {
+  width: 50%;
+  background-color: magenta;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+.animal {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 3px;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  background-color: orangered;
+  justify-content: center;
+  align-items: center;
+}
+
+.open-sign {
+  width: 200px;
+  height: 100px;
+  background-color: mediumseagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black solid 5px;
+  border-radius: 10px;
+}
+
+.sign h2 {
+  color: red;
+}
+

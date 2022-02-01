@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function OpenZoo({ isOpen }) {
   
-  return <div className='open-sign'>{
+  return <h1 className='open-sign'>{
     isOpen
       ? 'Zoo Open'
       : 'Zoo Closed'
   }
-  </div>;
+  </h1>;
 }

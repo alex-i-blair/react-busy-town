@@ -45,7 +45,7 @@ function App() {
           <button onClick={() => decreasePanda()}>Dolphin attacks panda</button>
         </div>
       </section>
-      <section className='open-sign'>
+      <section className='sign'>
         <OpenZoo isOpen={isOpen} />
         <div>
           <button onClick={() => setIsOpen(true)}>Open Zoo</button>
