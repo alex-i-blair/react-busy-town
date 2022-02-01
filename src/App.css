@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+#root, html {
+  background-image: url("./farm.jpeg")
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -38,10 +42,14 @@
 }
 
 .fight {
-  width: 50%;
-  background-color: magenta;
+  width: 45%;
+  background-color: rgba(255, 0, 47, 0.26);
   display: inline-flex;
   justify-content: space-evenly;
+  border: solid black 2px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .animal {
@@ -56,7 +64,7 @@ button {
 .sign {
   display: flex;
   flex-direction: column;
-  background-color: orangered;
+  /* background-color: orangered; */
   justify-content: center;
   align-items: center;
 }
@@ -64,15 +72,37 @@ button {
 .open-sign {
   width: 200px;
   height: 100px;
-  background-color: mediumseagreen;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: black solid 5px;
+  border: rgba(255, 0, 0, 0.692) solid 5px;
   border-radius: 10px;
+  margin-top: 50px; 
 }
 
-.sign h2 {
-  color: red;
+.sign h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.parade {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(65, 105, 225, 0.386); */
+  font-size: larger;
+}
+
+.animal-buttons {
+  margin-top: 10px;
+}
+
+.animal-parade {
+  width: fit-content;
+  background-color:rgba(65, 105, 225, 0.475);
+  border: royalblue 1px solid;
+  border-radius: 5px;
 }
 
