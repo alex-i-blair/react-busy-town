@@ -1,12 +1,13 @@
 import './App.css';
 import { useState } from 'react';
 import OpenZoo from './OpenZoo';
+import Parade from './Parade';
 
 function App() {
   const [pandaSize, setPandaSize] = useState(2);
   const [dolphinSize, setDolphinSize] = useState(2);
   const [isOpen, setIsOpen] = useState(false);
-  const [animalArray, setAnimalArray] = useState('bat', 'squirrel');
+  const [animalArray, setAnimalArray] = useState(['parrot', 'octopus']);
 
   const stylePanda = { fontSize: `${pandaSize}rem` };
   const styleDolphin = { fontSize: `${dolphinSize}rem` };
@@ -52,7 +53,13 @@ function App() {
         </div>
       </section>
       <section className='parade'>
-        <Pararde animalArray = {animalArray} />
+        <Parade animalArray = {animalArray} />
+        <div className='animal-buttons'>
+          <button onClick={() => setAnimalArray([...animalArray, 'frog'])}>Frog</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'parrot'])}>Parrot</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'octopus'])}>Octopus</button>
+          <button onClick={() => setAnimalArray([...animalArray, 'kangaroo'])}>Kangaroo</button>
+        </div>
       </section>
     </div>
   );
